@@ -1,29 +1,33 @@
-## Branching
+# Cfndslhelper
 
-git clone <GIT_REPO>
+A gem that helps with cfndsl.
 
-git fetch && git checkout develop
+## Installation
 
-git branch feature/<USER OR Whatevs>
+Add this line to your application's Gemfile:
 
-git checkout feature/<USER>
+```ruby
+gem 'cfndslhelper'
+```
 
-git push origin feature/<USER>
+And then execute:
 
-git branch --set-upstream-to origin/develop
+    $ bundle
 
-## Forking
+Or install it yourself as:
 
-git remote add upstream <GIT_REPO>
+    $ gem install cfndslhelper
 
-git remote -v
+## Usage
 
-git fetch upstream
+```
+cfndslhelper generate
 
-git branch -av
+cfndslhelper validate
 
-git branch --set-upstream-to upstream/develop
+cfndslhelper upload
 
-git pull --rebase
+cfndslhelper create -s somestack -p x=y,z=2
 
-
+cfndslhelper update -s somestack
+```
