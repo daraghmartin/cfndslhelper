@@ -1,0 +1,10 @@
+#version: 0.1.0
+project: testcfn
+ecs_cluster_name: TestStackEcsCluster
+stack_name: test
+application_name: transit-directconnect
+region: ap-southeast-2
+source_region: ap-southeast-2
+source_bucket: bucket.somewhere.on.s3
+:set_stack_as_name_tag: true
+notification_arns:

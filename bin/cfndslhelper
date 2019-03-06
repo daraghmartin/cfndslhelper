@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'cfndslhelper'
+
+CfnDSLHelper::Cli.new(ARGV.dup).execute!
